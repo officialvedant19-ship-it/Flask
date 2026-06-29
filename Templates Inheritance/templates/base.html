@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {%endblock%}</title>
+</head>
+<body>
+    <style>
+        nav{
+            background-color: #f90404;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            background-color: #2c0041;
+            color: white;
+        }
+
+    </style>
+    <nav>
+        <a href="/"><span > Home </span></a>
+        <a href="/about"><span> About </span></a>
+        <a href="/contact"><span> contact </span></a>
+    </nav>
+
+    {%block content%} {%endblock%}
+
+    <footer>  This is footer</footer>
+
+</body>
+</html>
